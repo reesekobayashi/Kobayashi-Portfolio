@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COGS3 JS wedding banquet table planner</title>
+</head>
+<body>
+    <h1>COGS3 JS wedding banquet table planner</h1>
+    <img src="weddingimages/1058345.png">
+
+    <script>
+        
+        function distributeGuestsAtEachTable(totalGuests, numberOfTables) {
+            let guestsPerTable = Math.floor(totalGuests / numberOfTables);
+            let remainingGuests = totalGuests % numberOfTables;
+
+            return {
+                totalGuests: totalGuests,
+                numberOfTables: numberOfTables,
+                guestsPerTable: guestsPerTable,
+                remainingGuests: remainingGuests
+            };
+        }
+
+        let totalGuestsInput = prompt("How Many Guests Do You Have?");
+        let numberOfTablesInput = prompt("How Many Tables Do You Want?");
+
+        let totalGuests = parseInt(totalGuestsInput);
+        let numberOfTables = parseInt(numberOfTablesInput);
+
+        if (isNaN(totalGuests) || isNaN(numberOfTables) || totalGuests < 1 || numberOfTables < 1) {
+            alert("Invalid input. Please enter valid positive numbers greater than one.");
+        } else {
+            let result = distributeGuestsAtEachTable(totalGuests, numberOfTables);
+        alert(`Your ${totalGuests} guests will be seated as follows: ${result.numberOfTables - result.remainingGuests > 0 ? result.numberOfTables - result.remainingGuests + " table" + (result.numberOfTables - result.remainingGuests > 1 ? "s" : "") + " of " + result.guestsPerTable : ""}${result.numberOfTables - result.remainingGuests > 0 && result.remainingGuests > 0 ? ", and " : ""}${result.remainingGuests > 0 ? result.remainingGuests + " table" + (result.remainingGuests > 1 ? "s" : "") + " of " + (result.guestsPerTable + 1) : ""}.`);
+        }
+    </script>
+</body>
+</html>

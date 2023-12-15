@@ -1,0 +1,171 @@
+/* COGS3 studyBuddy specific styles go here. */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+#title {
+    background-color: #6499E9;
+}
+h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #ffff;
+}
+h2 {
+    color: #ffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5;
+    font-weight: bold;
+}
+h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+p {
+    color: #8f8f8f;
+}
+.container-fluid {
+    padding: 3% 15%;
+}
+
+/* Navigation Bar */
+
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.navbar {
+    padding: 0 0 4.5rem;
+}
+.navbar-item {
+    padding: 0 18px;
+}
+.nav-link {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.2rem;
+    color: #21667a;
+}
+/* Buttons */
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* title image */
+
+.title-image {
+    width: 60%;
+    transform: rotate(20deg);
+    position: absolute;
+}
+ @media (max-width:1028px) {
+
+    #title {
+        text-align: center;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+ }
+
+
+/* features */
+#features {
+    padding: 7% 15%;
+    background-color: #ffff;
+    position: relative;
+    z-index: 1;
+}
+.feature-box {
+    text-align: center;
+    padding: 5%;
+}
+.icon {
+    color:#190482;
+    margin-bottom: 1rem;
+    
+}
+.icon:hover {
+    color:#6499E9;
+}
+
+/*tesimonials*/
+#testimonials {
+    text-align: center;
+    background-color: #6499E9;
+    color: #ffff;
+}
+.carousel-item {
+       padding: 7% 15%;
+}
+.testimonial-image {
+    width: 10%;
+    border-radius: 50%;
+    margin: 10px;
+}
+#press {
+    background-color: #6499E9;
+    text-align: center;
+}
+.press-logo {
+    width: 100px;
+    margin: 20px 20px 50px;
+}
+
+
+/* Pricing Section */
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+.pricing-header {
+    color: #000;
+}
+.pricing-column {
+    padding: 3% 2%;
+}
+
+/* Call to Action */
+
+#cta {
+    background-color: #6499E9;
+    color: #ffff;
+    padding: 7% 15%;
+    text-align: center;
+}
+.cta-heading {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+/* footer */
+#footer {
+    padding: 7% 15%;
+    text-align: center;
+}
+.social-icon {
+    margin: 20px 10px;
+}
+
+
+/* Media Query */
+
+@media (max-width:1028px) {
+
+    #title {
+        text-align: center;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+ }

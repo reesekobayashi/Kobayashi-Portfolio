@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--https://www.figma.com/file/pm3vB2w4v7bjeX8S8TiUP8/in-class-quiz-cogs3?type=design&node-id=0%3A1&mode=design&t=Im27S1wm4de6g7ee-1-->
+<html>
+<head>
+    <title>Image Swap COGS3 JS Quizzette</title>
+    <style>
+        #myContainer {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="myContainer">
+        <img id="myBeverage" src="images/tea.jpg" alt="favorite beverage" width="350">
+        <button onclick="swapImage()" >Swap My Beverage</button>
+    </div>
+    <script>
+        function swapImage() {
+            var image = document.getElementById('myBeverage');
+            if (image.src.match("images/coffeeTime.jpg")) {
+                image.src = "images/Tea.jpg";
+            } else {
+                image.src = "images/coffeeTime.jpg";
+            }
+        }
+    </script>
+</body>
+</html>

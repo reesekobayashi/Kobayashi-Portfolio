@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Halloween Candy Distribution</title>
+</head>
+
+<body>
+    <h1>COGS3 Halloween Candy Distribution</h1>
+
+    <script>
+        function distributeCandyWithLeftovers(totalCandy, numberOfKids) {
+            let candyPerKid = Math.floor(totalCandy/numberOfKids );
+            let leftoverCandy = totalCandy % numberOfKids ;
+
+            return {
+                totalCandy: totalCandy,
+                numberOfKids: numberOfKids,
+                candyPerKid: candyPerKid,
+                leftoverCandy: leftoverCandy
+            }
+        }
+
+        // A prompt is easy to get user input
+        let totalCandyInput = prompt("Enter the total amount of candy:");
+        let numberOfKidsInput = prompt("Enter the number of kids:");
+
+        // convert the input into numeric data types
+        let totalCandy = parseInt(totalCandyInput);
+        let numberOfKids = parseInt(numberOfKidsInput);
+
+        // it is good programming practice to validate the input 
+        if (isNaN(totalCandy) || isNaN(numberOfKids) || totalCandy < 0 || numberOfKids <= 0) {
+            alert("Invalid input. Please enter valid positive numbers.");
+        } else {
+            let result = distributeCandyWithLeftovers(totalCandy, numberOfKids);
+            alert(`Each kid gets ${result.candyPerKid} pieces of candy.\nYou get to keep ${result.leftoverCandy} pieces of candy.`);
+        }
+    </script>
+</body>
+
+</html>

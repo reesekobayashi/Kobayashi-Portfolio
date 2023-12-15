@@ -1,0 +1,60 @@
+
+body {
+width: 900px;
+margin: 0 auto;
+background-color: pink;
+padding: 0 20px 20px 20px;
+text-align: center;
+}
+.tablehead {
+    background-color: lightblue;
+    font-style: oblique;
+    border: 3px solid rgb(108, 202, 226)
+}
+img {
+    width: 100px
+}
+.timehead {
+    background-color: plum;
+    font-style: unset;
+    border: 3px solid mediumpurple;
+}
+.time {
+    background-color: grey;
+    font-style: calc(60px);
+    border: 3px solid rgb(220, 61, 88) 
+}
+.mgt {
+    background-color: rgba(247, 126, 83, 0.653);
+}
+.gym {
+    background-color: bisque;
+}
+.cogs {
+    background-color: rgba(126, 224, 196, 0.739);
+}
+.tdde {
+    background-color: rgba(255, 241, 44, 0.726);
+}
+a:visited {
+    color: red;
+}
+a:hover {
+    color: white;
+    background: black;
+}
+.left {
+    text-align: left;
+}
+.sleeping {
+    background-color: rgba(135, 207, 235, 0.721);
+}
+.getready {
+    background-color: rgba(246, 160, 39, 0.453);
+}
+.freetime {
+    background-color: palevioletred;
+}
+.homework {
+    background-color: rgba(106, 142, 35, 0.548);
+}
